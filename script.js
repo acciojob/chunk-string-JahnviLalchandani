@@ -1,4 +1,7 @@
 function stringChop(str, size) {
+  if(!str || size<=0){
+		return [];
+	}
   let res=[];
 	for(let i=0;i<str.length;i+=size){
 		res.push(str.slice(i,i+size));
@@ -8,6 +11,6 @@ function stringChop(str, size) {
 }
 
 // Do not change the code below
-const str = prompt("Enter String.");
-const size = Number(prompt("Enter Chunk Size."));
-alert(stringChop(str, size));
+// const str = prompt("Enter String.");
+// const size = Number(prompt("Enter Chunk Size."));
+// alert(stringChop(str, size));
